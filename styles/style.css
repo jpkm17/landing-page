@@ -193,3 +193,71 @@ div.yourSelection {
     background-color: var(--colorTertiary);
     margin: 0 17px;
 }
+
+
+/* SECTION PRODUCSTS */
+
+section.productList {
+    display: flex;
+    justify-content: center;
+}
+
+.productList .containerProducts {
+    width: 970px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productList .containerProducts .product {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 33px;
+}
+
+.productList .containerProducts .product img {
+    width: 200px;
+    height: 150px;
+}
+
+.productList .containerProducts .product .name {
+    font-size: 14px;
+    color: var(--colorTertiary);
+    margin-bottom: 10px;
+}
+
+.productList .containerProducts .product .description {
+    width: 200px;
+    height: 60px;
+}
+
+.productList .containerProducts .product p:nth-child(3),
+.productList .containerProducts .product p:nth-child(4),
+.productList .containerProducts .product p:nth-child(6) {
+    display: block;
+    font-size: 12px;
+    color: var(--colorTertiary);
+    font-weight: 300;
+}
+
+.productList .containerProducts .product h3.currentPrice {
+    color: var(--colorTertiary);
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 6px 0 6px 0;
+}
+
+.productList .containerProducts .product a.buyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    color: var(--colorTertiary);
+    font-size: 16px;
+    margin-top: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--colorSecondary);
+    border-radius: 4px;
+    cursor: pointer;
+}
