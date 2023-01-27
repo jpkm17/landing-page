@@ -22,7 +22,8 @@ body {
 }
 
 
-/* Section Menu  */
+/* SECTION MENU */
+
 header.menu {
     width: 100%;
     height: 400px;
@@ -81,7 +82,8 @@ header.menu {
     box-shadow: 0 1px 6px #0b0b0b;
 }
 
-/* Section Subscribe */
+
+/* SECTION SUBSCRIBE */
 
 section.subscribe {
     width: 925px;
@@ -116,7 +118,7 @@ section.subscribe {
 }
 
 
-/* Subscribe form */
+/* SUBSCRIBE FORM */
 
 .subscribe #form {
     display: flex;
@@ -169,7 +171,7 @@ section.subscribe {
 }
 
 
-/* Section Products */
+/* HEADER PRODUCTS */
 
 div.yourSelection {
     display: flex;
@@ -259,5 +261,22 @@ section.productList {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid var(--colorSecondary);
     border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.productList .containerProducts a.loadProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 39px;
+    color: var(--colorTertiary);
+    font-size: 16px;
+    text-decoration: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--colorSecondary);
+    border-radius: 4px;
+    margin-top: 19px;
     cursor: pointer;
 }
