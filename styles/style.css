@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 
@@ -74,7 +74,6 @@ header.menu {
     font-size: 14px;
     border: 1px solid var(--colorSecondary);
     box-shadow: 0px 1px 6px var(--colorQuaternary);
-    transition: all 500ms ease 100ms;
 }
 
 .menu nav ul li a:hover {
@@ -122,7 +121,6 @@ section.subscribe {
 
 .subscribe #form {
     display: flex;
-    /* margin-left: 25px; */
     flex-direction: column;
 }
 
@@ -278,5 +276,79 @@ section.productList {
     border: 1px solid var(--colorSecondary);
     border-radius: 4px;
     margin-top: 19px;
+    cursor: pointer;
+}
+
+
+/* SECTION SHARE */
+
+div.headerShare {
+    display: flex;
+    justify-content: center;
+    margin-top: 128px;
+}
+
+.headerShare h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--colorTertiary);
+}
+
+.headerShare h2::before,
+.headerShare h2::after {
+    display: inline-block;
+    content: '';
+    width: 357px;
+    height: 2px;
+    background-color: var(--colorTertiary);
+    margin: 0 17px;
+}
+
+section.shareSection {
+    width: 710px;
+    display: flex;
+    justify-content: center;
+    margin: 44px;
+    color: var(--colorTertiary);
+}
+
+.shareSection .shareForm {
+    display: flex;
+    width: 710px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.shareSection .shareForm .formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 39px;
+}
+
+.shareSection .shareForm .formContainer .containerInput label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.shareSection .shareForm .formContainer .containerInput input{
+    width: 340px;
+    height: 30px;
+    border: 1px solid var(--colorSecondary);
+}
+
+.shareSection .shareForm button {
+    width: 260px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--colorSecondary);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 50px;
+    color: var(--colorTertiary);
     cursor: pointer;
 }
