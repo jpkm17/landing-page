@@ -1,0 +1,30 @@
+@media (max-width: 426px) {
+    header.menu {
+        height: 397px;
+        align-items: flex-end;
+        text-align: left;
+    }
+
+    .menu h3, .menu h1, .menu p{
+        width: 90%;
+    }
+    
+    .menu nav {
+        width: 345px;
+        height: 111px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 62%;
+    }
+
+    .menu nav ul {
+        flex-wrap: wrap;
+    }
+
+    section.subscribe {
+        flex-direction: column;
+    }
+
+
+}
