@@ -101,6 +101,7 @@ section.subscribe {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 79px;
 }
 
 
@@ -200,11 +201,6 @@ div.yourSelection {
 
 /* SECTION PRODUCSTS */
 
-section.productList {
-    display: flex;
-    justify-content: center;
-}
-
 .productList .containerProducts {
     width: 970px;
     display: flex;
@@ -223,38 +219,39 @@ section.productList {
     height: 150px;
 }
 
-.productList .containerProducts .product .name {
+.productList .containerProducts .product div .name {
     font-size: 14px;
     color: var(--colorTertiary);
     margin-bottom: 10px;
 }
 
-.productList .containerProducts .product .description {
+.productList .containerProducts .product div .description {
     width: 200px;
     height: 60px;
 }
 
-.productList .containerProducts .product p:nth-child(3),
-.productList .containerProducts .product p:nth-child(4),
-.productList .containerProducts .product p:nth-child(6) {
+.productList .containerProducts .product div p:nth-child(2),
+.productList .containerProducts .product div p:nth-child(3),
+.productList .containerProducts .product div p:nth-child(4),
+.productList .containerProducts .product div p:nth-child(5) {
     display: block;
     font-size: 12px;
     color: var(--colorTertiary);
     font-weight: 300;
 }
 
-.productList .containerProducts .product h3.currentPrice {
+.productList .containerProducts .product div h3.currentPrice {
     color: var(--colorTertiary);
     font-weight: bolder;
     font-size: 16px;
     margin: 6px 0 6px 0;
 }
 
-.productList .containerProducts .product a.buyButton {
+.productList .containerProducts .product div a.buyButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 100%;
     height: 30px;
     color: var(--colorTertiary);
     font-size: 16px;
@@ -419,8 +416,52 @@ footer .container {
         width: 100%;
     }
 
-    .subscribe #form button{
+    .subscribe #form button {
         width: 100%;
         height: 39px;
+    }
+
+    div.yourSelection {
+        width: 100%;
+    }
+
+    .yourSelection h2 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .yourSelection h2::after,
+    .yourSelection h2::before {
+        width: 21%;
+        margin: 0;
+    }
+
+
+    .productList .containerProducts {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productList .containerProducts .product {
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       flex-direction: row;
+       height: auto;
+    }
+
+    .productList .containerProducts .product img{
+        width: 169px;
+        height: 129px;
+    }
+
+    .productList .containerProducts .product div{
+        width: 48%;
+        height: auto;
+    }
+    .productList .containerProducts .product div p.description {
+        display: none;
     }
 }
